@@ -1,0 +1,18 @@
+.background{
+	background:url("../images/car.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.details{
+	font-style: normal;
+	color: white;
+}
+.well{
+	background-color: transparent;
+	margin-left: 2px;
+}
+.row{
+	margin-left: 3px;
+}

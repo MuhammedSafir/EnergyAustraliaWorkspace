@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Energy Australia</title>
+<link rel="stylesheet" href="../app/src/css/bootstrap-min.css"></link>
+<link rel="stylesheet" href="../app/src/css/style.css"></link>
+<script type="text/javascript" src="../app/src/js/jquery-min.js"></script>
+<script type="text/javascript" src="../app/src/js/angular-min.js"></script>
+<script type="text/javascript" src="../app/app.js"></script>
+<script type="text/javascript" src="../app/src/js/underscore.js"></script>
+</head>
+<body ng-app="carShow" ng-controller="mainController" class="background">
+<div ng-init="getCarList()" class="details">
+<h2>Car Show</h2>
+	<div class="row">
+		<div class="well col-md-8" ng-repeat="(key,value) in carList[0]">
+		<label>Make: {{key}}</label><br>
+		<div ng-repeat="details in value"><br>Model: {{details.model}}<br>Show Attended: {{details.name}}</div>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
